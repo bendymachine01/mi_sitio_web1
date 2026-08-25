@@ -1,0 +1,23 @@
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,Helvetica,sans-serif;background:#f4f6f8;color:#222;line-height:1.65}
+header{background:#34495e;color:white;text-align:center;padding:45px 20px}
+header h1{font-size:clamp(2rem,5vw,3.2rem);margin-bottom:8px}
+header p{color:#e2e8ee}
+nav{display:flex;justify-content:center;gap:6px;flex-wrap:wrap;background:white;padding:14px;border-bottom:1px solid #ddd;position:sticky;top:0;z-index:10}
+nav a{color:#34495e;text-decoration:none;padding:8px 12px;border-radius:5px;transition:.2s}
+nav a:hover{background:#e8edf2}
+main{width:min(1000px,92%);margin:40px auto;min-height:55vh}
+.card{background:white;border:1px solid #ddd;border-radius:10px;padding:35px;box-shadow:0 4px 15px #00000012}
+.home{text-align:center;padding:60px 35px}
+.home>p:first-child{color:#58718a;font-size:18px}
+.card h2{color:#34495e;margin-bottom:15px}
+.card p{margin-bottom:15px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:18px;margin-top:25px}
+.box{background:#f7f8fa;border:1px solid #d9dee5;border-radius:8px;padding:22px;min-height:90px;transition:.2s}
+.box:hover{transform:translateY(-3px);box-shadow:0 5px 12px #00000015}
+.note{color:#6d7883;font-size:14px;font-style:italic;margin-top:25px}
+table{width:100%;border-collapse:collapse;margin-top:20px}
+th,td{padding:12px;border:1px solid #d5dbe2;text-align:left}
+th{background:#34495e;color:white}
+footer{text-align:center;background:#34495e;color:#dce4ed;padding:25px;margin-top:40px;font-size:14px}
+@media(max-width:700px){nav{position:static}main{margin:25px auto}.card{padding:24px}table{font-size:14px}}
